@@ -37,10 +37,17 @@ nav span {
   padding: 0px 10px;
 }
 
-.news {
+.content {
   padding-top: 100px;
+  display: flex;
+  
 }
 
+.column {
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
 .column.large {
   width: 630px;
 }
