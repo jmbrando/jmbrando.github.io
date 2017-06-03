@@ -1,14 +1,20 @@
+body {
+  margin: 0;
+}
+
 header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   display: flex;
   position: fixed;
-  z-index: 5;
+  z-index: 10;
   height: 80px;
   width: 100%;
   align-items: center;
   border-bottom: 1px solid black;
+  background-color: white;
+
 }
 
 div {
@@ -40,7 +46,6 @@ nav span {
 .content {
   padding-top: 100px;
   display: flex;
-  
 }
 
 .column {
@@ -58,4 +63,50 @@ nav span {
 
 .column.small {
   width: 240px;
+}
+
+.background {
+  height: 300px;
+  display: flex;
+  font-family: Georgia;
+  font-weight: bold;
+  color: white;
+  font-size: 40px;
+  text-align: left;
+  align-items: flex-start;
+  margin-top: 0px;
+}
+
+.background2 {
+  height: 300px;
+  display: flex;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.phish {
+  background-image: url("../../resources/images/img-story-main.png");
+}
+
+.earth {
+  background-image: url("../../resources/images/img-story-2.png");
+}
+
+.memory {
+  background-image: url("../../resources/images/img-story-3.png");
+}
+
+.cats {
+  background-image: url("../../resources/images/img-story-1.png");
+}
+
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
