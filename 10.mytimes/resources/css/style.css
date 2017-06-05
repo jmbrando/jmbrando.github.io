@@ -61,6 +61,7 @@ nav span {
 
 .column.small {
   width: 240px;
+  flex-direction: column;
 }
 
 .background {
@@ -116,10 +117,29 @@ p {
   margin: 0px 0px;
   justify-content: space-between;
   width: 630px;
+  height: 565;
 }
 
 .tertiary {
   display: inline-flex;
   flex-direction: column;
   width: 300px;
+}
+
+.headbites {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+
+.bite {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  display: block;
+  padding: 11px 20px;
+  margin: 0px;
+  border-bottom: 1px solid black;
 }
