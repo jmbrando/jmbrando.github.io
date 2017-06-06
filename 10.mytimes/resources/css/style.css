@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  height: 1192px;
   width: 100%;
 }
 
@@ -41,6 +40,10 @@ nav span {
   padding: 0px 10px;
 }
 
+nav a {
+  color: black;
+}
+
 .content {
   padding-top: 100px;
   display: flex;
@@ -53,6 +56,7 @@ nav span {
 }
 .column.large {
   width: 630px;
+  margin-bottom: 100px;
 }
 
 .column.medium {
@@ -72,7 +76,7 @@ nav span {
   color: white;
   font-size: 40px;
   text-align: left;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 0px;
 }
 
@@ -85,7 +89,7 @@ nav span {
   font-size: 30px;
   color: white;
   text-align: center;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 15px;
 }
 
@@ -105,10 +109,20 @@ nav span {
   background-image: url("../../resources/images/img-story-1.png");
 }
 
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+}
+
 p {
   font-family: Georgia;
   font-size: 17px;
   color: black;
+  margin-bottom: 50px;
 }
 /*fix spacing between tertiary columns*/
 .secondary {
@@ -142,4 +156,46 @@ p {
   padding: 11px 20px;
   margin: 0px;
   border-bottom: 1px solid black;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 325px;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+.footline {
+  display: block;
+}
+
+.footlogo {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: 2px solid white;
+  padding-right: 25px;
+  display: inline-block;
+}
+
+.more {
+  display: inline-block;
+  padding-left: 25px;
+}
+
+.more a {
+  display: inline-block;
+  padding: 20px 10px;
+  color: black;
+}
+
+.copyright {
+  display: block;
 }
