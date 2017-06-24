@@ -90,6 +90,10 @@ nav ul {
   padding: 0.75rem 0;
   list-style: none;
 }
+
+.mobile-nav {
+  display: none;
+}
 /* End of nav */
 
 /* Start of featured */
@@ -132,12 +136,12 @@ nav ul {
 .details {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 4rem;
 }
 
 .info {
   display: block;
   width: 35%;
-  padding-bottom: 4rem;
   flex-direction: column;
 }
 
@@ -163,3 +167,83 @@ footer {
   display: block;
   text-align: left;
 }
+/* End of footer */
+
+/* Start of media queries */
+/* Media query for tablet */
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+
+  .glasses {
+    display: none;
+  }
+
+  .item {
+    width: 47%;
+  }
+}
+
+/* Media query for phone */
+@media only screen and (max-width: 470px) {
+  .banner {
+    height: 15rem;
+  }
+
+  .banner .container {
+    padding-top: 10rem;
+  }
+
+  .textbox {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .banner h2 {
+    font-size: 0.77rem;
+  }
+
+  .banner h1 {
+    font-size: 1rem;
+  }
+
+  .watch {
+    display: none;
+  }
+
+  .item {
+    width: 90%;
+  }
+
+  .items {
+    justify-content: center;
+  }
+
+  .info {
+    width: 90%;
+  }
+
+  .details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location {
+    margin-bottom: 0.5rem;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}
+/* End of media queries */
