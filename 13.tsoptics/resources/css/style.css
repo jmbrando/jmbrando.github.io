@@ -1,7 +1,10 @@
 html {
   font-size: 18px;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
   line-height: 1.4;
-  font-family: Helvetica;
 }
 
 .container {
@@ -34,7 +37,6 @@ header {
   display: inline-flex;
   padding: 1rem 2rem;
   align-items: center;
-  flex-grow: 1;
   color: white;
 }
 
@@ -96,3 +98,40 @@ h1.allcaps {
   width: 3.5rem;
 }
 /* End of Mission */
+
+/* Start of About */
+.about {
+  display: flex;
+  margin-bottom: 5rem;
+  justify-content: center;
+}
+
+.item {
+  width: 35%;
+  display: inline-block;
+  flex-direction: column;
+  margin-right: 5%;
+
+}
+
+h2.allcaps {
+  color: white;
+  font-weight: bold;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+/* End of About */
+
+/* Start of Copyright */
+.copyright {
+  display: flex;
+  color: black;
+  background-color: azure;
+  padding: 4rem;
+  width: auto;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* End of Copyright */
