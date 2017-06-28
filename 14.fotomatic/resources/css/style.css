@@ -41,6 +41,7 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  z-index: 5;
 }
 
 header .content {
@@ -117,9 +118,16 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url("../../resources/images/banner-landingpage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #sign-up-cta {
+  position: relative;
+  top: 170px;
+  left: 100px;
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
@@ -214,6 +222,7 @@ header .mobile {
   justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
+  height: 635px;
 }
 
 .feature {
@@ -221,17 +230,28 @@ header .mobile {
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
+
 }
 
-.feature .image-container {
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.feature .image-container img {
   width: 90%;
   height: 65%;
-  margin: 0 auto;
+}
+
+.feature .content {
+  height: 187px;
+  margin: 40px 0px;
 }
 
 .feature h2 {
   padding-bottom: .5rem;
   font-size: 2.25rem;
+  line-height: 1.2;
   font-weight: bold;
   color: #4a4a4a;
 }
