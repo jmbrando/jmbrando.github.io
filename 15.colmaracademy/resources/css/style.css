@@ -5,7 +5,8 @@ html {
 }
 
 body {
-  background-color: red;
+  background-color: lightblue;
+  line-height: 1.4;
 }
 
 .container {
@@ -15,6 +16,21 @@ body {
 
 .allcaps {
   text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 /* End of All */
 
@@ -29,7 +45,7 @@ header {
 }
 
 strong {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 nav {
@@ -46,3 +62,35 @@ nav a {
   color: black;
 }
 /* End of Header */
+
+/* Start of Banner */
+.banner {
+  display: flex;
+  background-color: lightgrey;
+  align-items: center;
+}
+
+.banner img {
+  width: 60%;
+  height: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.banner-text {
+  padding-left: 1rem;
+  padding-right: 4rem;
+}
+
+.banner-text p {
+  padding: 1rem 0rem;
+  font-weight: 600;
+}
+
+.banner-text button {
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  border: none;
+  padding: .5rem 6rem;
+}
+/* Start of Banner */
