@@ -70,20 +70,26 @@ nav a {
   align-items: center;
 }
 
-.banner img {
+.banner-img {
   width: 60%;
-  height: 60%;
   margin: 2rem 1.5rem;
+}
+
+.banner-img img {
+  max-width: 100%;
+  height: auto;
 }
 
 .banner-text {
   padding-left: 1rem;
-  padding-right: 4rem;
 }
 
 .banner-text p {
+  max-width: 15rem;
   padding: 1rem 0rem;
+  margin-bottom: 1rem;
   font-weight: 600;
+  line-height: 2;
 }
 
 .banner-text button {
@@ -93,4 +99,32 @@ nav a {
   border: none;
   padding: .5rem 6rem;
 }
-/* Start of Banner */
+/* End of Banner */
+
+/* Start of Information */
+.information {
+  display: flex;
+  background-color: white;
+}
+
+.information-head {
+  display: inline-flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.information-head img {
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 1.5rem;
+}
+
+.information-head h2,
+.information-head p,
+.information-head span {
+  width: 90%;
+  margin: 0rem 1.5rem;
+}
+
+
+/* End of Information */
