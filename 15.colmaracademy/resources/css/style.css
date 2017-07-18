@@ -9,6 +9,10 @@ body {
   line-height: 1.4;
 }
 
+div {
+  border: 1px solid black;
+}
+
 .container {
   width: 64rem;
   margin: 0px auto;
@@ -29,9 +33,14 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
 }
+
+p {
+
+}
+
 /* End of All */
 
 /* Start of Header */
@@ -66,22 +75,29 @@ nav a {
 /* Start of Banner */
 .banner {
   display: flex;
+  flex-direction: row;
   background-color: lightgrey;
   align-items: center;
 }
 
 .banner-img {
   width: 60%;
-  margin: 2rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .banner-img img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
 .banner-text {
-  padding-left: 1rem;
+  max-width: 40%;
+  padding: 1rem;
+  padding-right: 6rem;
+}
+
+.banner-text h1 {
+  max-width: 20rem;
 }
 
 .banner-text p {
@@ -107,24 +123,54 @@ nav a {
   background-color: white;
 }
 
+.information p {
+  font-size: .85rem;
+  font-weight: 200;
+}
+
+.information a,
+.information span {
+  font-size: .85rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 .information-head {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   width: 60%;
+  padding: 2rem 1.5rem;
 }
 
 .information-head img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  margin: 2rem 1.5rem;
 }
 
-.information-head h2,
-.information-head p,
-.information-head span {
+.information-head .text {
   width: 90%;
-  margin: 0rem 1.5rem;
 }
 
+.information-body {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+}
 
+.information-body .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item img {
+  max-width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+.information-body .item-text {
+  display: inline-flex;
+  flex-direction: column;
+}
 /* End of Information */
