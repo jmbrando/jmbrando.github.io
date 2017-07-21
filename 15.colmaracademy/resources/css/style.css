@@ -179,12 +179,23 @@ nav a {
   display: flex;
   flex-direction: column;
   padding: 1rem 0rem;
+  margin-top: .1rem;
+  border-left: .05rem solid rgb(210, 213, 215);
 }
 
 .information-body .item {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.information-body .one,
+.information-body .two {
+  border-bottom: .05rem solid rgb(210, 213, 215);
+}
+
+.information-body .item:hover {
+  background-color: rgb(210, 213, 215);
 }
 
 .item img {
@@ -196,5 +207,55 @@ nav a {
 .information-body .item-text {
   display: inline-flex;
   flex-direction: column;
+  padding-right: .5rem;
 }
 /* End of Information */
+
+/* Start of Learning */
+.learning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(220, 222, 222);
+  padding: 2rem 0rem;
+}
+
+.learning h2 {
+  padding-bottom: 1rem;
+}
+
+.courses {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: rgb(247, 250, 250);
+  max-width: 25%;
+  margin: 1rem;
+}
+
+.course img {
+  max-width: 100%;
+  height: auto;
+}
+
+.course-text {
+  padding: 1rem;
+}
+
+.course-text span {
+  display: block;
+  padding: .5rem 0rem;
+  font-size: .85rem;
+}
+
+.course-text p {
+  line-height: 1.6;
+  font-size: .8rem;
+}
+/* End of Learning */
