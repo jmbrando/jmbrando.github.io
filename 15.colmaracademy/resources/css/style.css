@@ -90,6 +90,8 @@ nav a {
 }
 
 .banner-img {
+  display: flex;
+  flex-direction: column;
   width: 60%;
   padding: 2rem 1.5rem;
 }
@@ -100,7 +102,9 @@ nav a {
 }
 
 .banner-text {
-  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
   padding: 1rem;
   padding-right: 6rem;
 }
@@ -152,7 +156,7 @@ nav a {
 .information-head {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 55%;
   padding: 2rem 1.5rem;
 }
 
@@ -175,7 +179,7 @@ nav a {
 }
 
 .information-body {
-  max-width: 40%;
+  max-width: 25rem;
   display: flex;
   flex-direction: column;
   padding: 1rem 0rem;
@@ -183,19 +187,19 @@ nav a {
   border-left: .05rem solid rgb(210, 213, 215);
 }
 
-.information-body .item {
+.item {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
+.item:hover {
+  background-color: rgb(210, 213, 215);
+}
+
 .information-body .one,
 .information-body .two {
   border-bottom: .05rem solid rgb(210, 213, 215);
-}
-
-.information-body .item:hover {
-  background-color: rgb(210, 213, 215);
 }
 
 .item img {
@@ -204,7 +208,7 @@ nav a {
   margin: 1rem;
 }
 
-.information-body .item-text {
+.item-text {
   display: inline-flex;
   flex-direction: column;
   padding-right: .5rem;
@@ -213,9 +217,7 @@ nav a {
 
 /* Start of Learning */
 .learning {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   background-color: rgb(220, 222, 222);
   padding: 2rem 0rem;
 }
@@ -234,6 +236,7 @@ nav a {
 .course {
   display: inline-flex;
   flex-direction: column;
+  text-align: left;
   background-color: rgb(247, 250, 250);
   max-width: 25%;
   margin: 1rem;
@@ -259,3 +262,69 @@ nav a {
   font-size: .8rem;
 }
 /* End of Learning */
+
+/* Start of Exhibit */
+.exhibit {
+  background-color: rgb(247, 250, 250);
+}
+
+.exhibit h2 {
+  padding: 2rem 0rem 1rem 0rem;
+  text-align: center;
+}
+
+.exhibit-box {
+  display: flex;
+}
+
+.exhibit-head {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  padding: 0rem 1rem 0rem 1.5rem;
+}
+
+.exhibit-head video {
+  width: 100%;
+  height: auto;
+}
+
+.exhibit-head h3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.exhibit p {
+  padding-bottom: 2rem;
+  font-size: .85rem;
+  line-height: 1.6;
+}
+
+.exhibit-body {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  padding-top: .7rem;
+}
+
+.exhibit-body .one {
+  border-bottom: .05rem solid rgb(210, 213, 215);
+}
+/* End of Exhibit */
+
+/* Start of Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  padding-bottom: 2rem;
+  font-size: .8rem;
+  background-color: rgb(247, 250, 250);
+  border-top: .05rem solid rgb(210, 213, 215);
+}
+
+.copyright {
+  padding-left: 1.5rem;
+}
+/* End of Footer */
