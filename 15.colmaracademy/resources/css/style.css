@@ -33,24 +33,9 @@ h3 {
   font-size: 1.25rem;
   font-weight: 800;
 }
-
-p {
-
-}
-
 @media only screen and (max-width: 1024px) {
   html {
     font-size: 14px;
-  }
-
-  .container {
-    width: auto;
-  }
-}
-
-@media only screen and (max-width: 470px) {
-  html {
-    font-size: 12px;
   }
 
   .container {
@@ -241,6 +226,18 @@ nav a {
   background-color: rgb(247, 250, 250);
 }
 
+.information-head {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.information-head img {
+  width: 100%;
+  height: auto;
+}
+
 .information p {
   font-size: .85rem;
   font-weight: 300;
@@ -256,18 +253,6 @@ nav a {
 .information span {
   font-size: .75rem;
   font-weight: 500;
-}
-
-.information-head {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  padding: 2rem 1.5rem;
-}
-
-.information-head img {
-  width: 100%;
-  height: auto;
 }
 
 .text {
@@ -308,15 +293,63 @@ nav a {
 }
 
 .item img {
-  max-width: 35%;
+  width: 35%;
   height: auto;
   margin: 1rem;
+}
+
+img.mobile {
+  display: none;
 }
 
 .item-text {
   display: inline-flex;
   flex-direction: column;
   padding-right: .5rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .information-head {
+    display: none;
+  }
+
+  .information-body {
+    width: auto;
+    padding: 0;
+    border: none;
+  }
+
+  img.desktop {
+    display: none;
+  }
+
+  img.mobile {
+    display: block;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: left;
+    padding: 1rem;
+  }
+
+  .item img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .information h3 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  .information p {
+    font-size: 1rem;
+  }
+
+  .information a {
+    font-size: 1rem;
+  }
 }
 /* End of Information */
 
