@@ -10,10 +10,6 @@ body {
   line-height: 1.4;
 }
 
-/* div {
-  border: 1px solid black;
-} */
-
 .container {
   width: 64rem;
   margin: 0px auto;
@@ -42,6 +38,25 @@ p {
 
 }
 
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  html {
+    font-size: 12px;
+  }
+
+  .container {
+    width: auto;
+  }
+}
 /* End of All */
 
 /* Start of Header */
@@ -61,7 +76,14 @@ strong {
 }
 
 .header-title {
+  display: flex;
   padding-left: 1.5rem;
+  align-items: center;
+}
+
+.logo {
+  width: 3rem;
+  height: auto;
 }
 
 nav {
@@ -78,6 +100,50 @@ nav a {
   text-decoration: none;
   color: black;
 }
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  header {
+    width: 100%;
+  }
+
+  .header-title {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+
+  nav {
+    display: flex;
+    width: 100%;
+  }
+
+  .mobile-nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mobile-nav .logo {
+    height: 3rem;
+  }
+}
 /* End of Header */
 
 /* Start of Banner */
@@ -93,7 +159,7 @@ nav a {
   display: flex;
   flex-direction: column;
   width: 60%;
-  padding: 2rem 1.5rem;
+  margin: 2rem 1.5rem;
 }
 
 .banner-img img {
@@ -104,17 +170,16 @@ nav a {
 .banner-text {
   display: flex;
   flex-direction: column;
-  max-width: 25rem;
+  width: 35%;
   padding: 1rem;
-  padding-right: 6rem;
 }
 
 .banner-text h1 {
-  max-width: 20rem;
+  width: 70%;
 }
 
 .banner-text p {
-  max-width: 15rem;
+  width: 70%;
   padding: 1rem 0rem;
   margin-bottom: 1rem;
   font-weight: 600;
@@ -122,12 +187,52 @@ nav a {
 }
 
 .banner-text button {
+  width: 70%;
   font-size: 1rem;
   color: white;
   background-color: rgb(37, 48, 66);
   border: none;
-  padding: .5rem 6rem;
+  padding: .5rem ;
 }
+
+@media only screen and (max-width: 960px) {
+  .banner-text p {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner-img {
+    width: auto;
+    margin: 0;
+  }
+
+  .banner-text {
+    width: 100%;
+    padding: 1rem 0rem;
+  }
+
+  .banner-text h1 {
+    width: auto;
+    padding: 0rem 1rem;
+  }
+
+  .banner-text p {
+    width: auto;
+    padding: 0rem 1rem;
+  }
+
+  .banner-text button {
+    width: auto;
+    margin: 0rem 1rem;
+  }
+}
+
+
 /* End of Banner */
 
 /* Start of Information */
@@ -156,7 +261,7 @@ nav a {
 .information-head {
   display: flex;
   flex-direction: column;
-  width: 55%;
+  width: 60%;
   padding: 2rem 1.5rem;
 }
 
@@ -179,7 +284,7 @@ nav a {
 }
 
 .information-body {
-  max-width: 25rem;
+  width: 40%;
   display: flex;
   flex-direction: column;
   padding: 1rem 0rem;
@@ -280,7 +385,7 @@ nav a {
 .exhibit-head {
   display: flex;
   flex-direction: column;
-  width: 55%;
+  width: 60%;
   padding: 0rem 1rem 0rem 1.5rem;
 }
 
@@ -303,7 +408,7 @@ nav a {
 .exhibit-body {
   display: flex;
   flex-direction: column;
-  max-width: 25rem;
+  width: 40%;
   padding-top: .7rem;
 }
 
